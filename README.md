@@ -1,5 +1,5 @@
 # Logos-API-Authentication
-[![APIKey](https://img.shields.io/badge/OpenCore-1.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
+[![APIKey](https://img.shields.io/badge/APIAuth-1.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
 
 -----
 ## Example project with FAHMenu
