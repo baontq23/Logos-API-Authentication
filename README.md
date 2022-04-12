@@ -1,5 +1,5 @@
 # Logos-API-Authentication
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.4-blue)](https://github.com/acidanthera/OpenCorePkg)
+[![APIKey](https://img.shields.io/badge/OpenCore-1.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
 
 -----
 ## Example project with FAHMenu
