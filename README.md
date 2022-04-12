@@ -59,7 +59,7 @@ timer(2){
 	[menu setIconMenu:MenuIcon];
 	[menu setMainColor:[UIColor redColor]];
 	[menu setCredits:@"@@APPNAME@@ Mod Menu by @@USER@@!"];
-	[APIClient paid:^{
+	[APIClient paid:^{ //normal paid
 	[menu initMenu];
 	setup();
 	}];
