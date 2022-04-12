@@ -36,3 +36,12 @@ void vipFuntion() {
 
 ## Requirement
 - Install libApiKey.deb
+- Contact me register with server
+
+## Credits
+* [dogo](https://github.com/dogo)
+  * For [SCLAlertView](https://github.com/dogo/SCLAlertView)
+* [jdg](https://github.com/jdg)
+  * For [MBProgressHUD](https://github.com/jdg/MBProgressHUD)
+* [fahlnbg](https://github.com/fahlnbg)
+  * For [FAHMenu-iOS-Mod-Menu](https://github.com/fahlnbg/FAHMenu-iOS-Mod-Menu)
