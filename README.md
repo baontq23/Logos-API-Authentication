@@ -32,6 +32,44 @@ void vipFuntion() {
       //admin funtion
   }];
 }
+
+```
+## Example with FAHMenu
+```obj-c
+#import "baseicon.h"
+#import "FAHMenu/Macros.h"
+#import "Auth/APIKey.h"
+
+void setup(){
+	[menu addToggleOffsetItem:@"Test" offsets:{ENCRYPTOFFSET("0x3962580")} bytes:{ENCRYPTHEX("0x340080D2")}];
+	[APIClient vipPaid:^{
+	[menu addToggleOffsetItem:@"Test" offsets:{ENCRYPTOFFSET("0x3962580")} bytes:{ENCRYPTHEX("0x340080D2")}]; //vip funtion
+	}];
+}
+
+
+static void didFinishLaunching(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef info) {
+[APIClient setEmail:@"example@domain.com"]; //email web server
+[APIClient setDebid:0]; //id deb
+[APIClient setDebVersion:@"lqmvn1.3"];// deb version
+[UIPatch setFrameworkName:"UnityFramework"];
+
+timer(2){ 	
+	[menu setTitle:@"@@APPNAME@@ Mod Menu"];
+	[menu setIconMenu:MenuIcon];
+	[menu setMainColor:[UIColor redColor]];
+	[menu setCredits:@"@@APPNAME@@ Mod Menu by @@USER@@!"];
+	[APIClient paid:^{
+	[menu initMenu];
+	setup();
+	}];
+	
+ });
+}
+
+%ctor {
+  CFNotificationCenterAddObserver(CFNotificationCenterGetLocalCenter(), NULL, &didFinishLaunching, (CFStringRef)UIApplicationDidFinishLaunchingNotification, NULL, CFNotificationSuspensionBehaviorDeliverImmediately);
+}
 ```
 
 ## Requirement
