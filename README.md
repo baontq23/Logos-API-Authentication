@@ -1,4 +1,7 @@
 # Logos-API-Authentication
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.7.4-blue)](https://github.com/acidanthera/OpenCorePkg)
+
+-----
 ## Example project with FAHMenu
 
 ## Example Useage objective-c
