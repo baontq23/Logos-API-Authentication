@@ -1,6 +1,6 @@
 # Logos-API-Authentication
 # Example project with FAHMenu
-<img src="https://github.com/">
+
 # Example Useage objective-c
 ```obj-c
 #import "Auth/APIKey.h"
