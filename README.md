@@ -1,7 +1,7 @@
 # Logos-API-Authentication
-# Example project with FAHMenu
+## Example project with FAHMenu
 
-# Example Useage objective-c
+## Example Useage objective-c
 ```obj-c
 #import "Auth/APIKey.h"
 //initialize first
@@ -25,5 +25,5 @@ void vipFuntion() {
 }
 ```
 
-# Requirement
+## Requirement
 - Install libApiKey.deb
