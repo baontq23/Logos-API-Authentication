@@ -4,7 +4,9 @@
 -----
 ## Example project with FAHMenu
 <p align="center">
-	<img src="https://github.com/baontq23/Logos-API-Authentication/img./1.png"/>
+	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/1.png"/>
+	<br>
+	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/2.png"/>
 </p>
 
 ## Example Useage objective-c
