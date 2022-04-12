@@ -1,6 +1,6 @@
 # Logos-API-Authentication
 [![APIKey](https://img.shields.io/badge/APIAuth-1.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
-> Simple lib authentication with objective c.
+> Simple lib authentication with objective c. For internal use
 >> Theos, dragon maker, etc..
 -----
 ## Example project with FAHMenu
