@@ -3,7 +3,9 @@
 
 -----
 ## Example project with FAHMenu
-
+<p align="center">
+	<img src="https://github.com/baontq23/Logos-API-Authentication/img./1.png"/>
+</p>
 ## Example Useage objective-c
 ```obj-c
 #import "Auth/APIKey.h"
