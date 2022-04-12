@@ -71,6 +71,11 @@ timer(2){
   CFNotificationCenterAddObserver(CFNotificationCenterGetLocalCenter(), NULL, &didFinishLaunching, (CFStringRef)UIApplicationDidFinishLaunchingNotification, NULL, CFNotificationSuspensionBehaviorDeliverImmediately);
 }
 ```
+## Result 
+<p align="center">
+	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/3.png"/>
+	<br>
+</p>
 
 ## Requirement
 - Install libApiKey.deb
