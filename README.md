@@ -73,7 +73,7 @@ timer(2){
 ```
 ## Result 
 <p align="center">
-	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/3.png"/>
+	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/3.jpg"/>
 	<br>
 </p>
 
