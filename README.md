@@ -15,6 +15,7 @@
 ```obj-c
 #import "Auth/APIKey.h"
 //initialize first
+[APIClient setDylibName:@"TWEAKNAME"];//name in makefile
 [APIClient setEmail:@"example@domain.com"]; //email register on website
 [APIClient setDebid:0]; //id deb !important
 [APIClient setDebVersion:@"lqmvn1.3"];// deb version (NSString)

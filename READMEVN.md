@@ -15,6 +15,7 @@
 ```obj-c
 #import "Auth/APIKey.h"
 //Phải khởi tạo đầu tiên để có dữ liệu gửi lên server
+[APIClient setDylibName:@"TWEAKNAME"];//Tên tweak trong makefile, đặt sai sẽ không tìm được trên server
 [APIClient setEmail:@"example@domain.com"]; //email register on website
 [APIClient setDebid:0]; //id deb !important
 [APIClient setDebVersion:@"lqmvn1.3"];// deb version (NSString)
