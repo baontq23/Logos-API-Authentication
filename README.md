@@ -83,9 +83,8 @@ timer(2){
 [Youtube](https://youtu.be/BNMgdwZNJcU)
 
 ## Requirement
-- Install libApiKey.deb
 - Contact me register with server
-
+- layout folder (like template)
 ## Credits
 * [dogo](https://github.com/dogo)
   * For [SCLAlertView](https://github.com/dogo/SCLAlertView)

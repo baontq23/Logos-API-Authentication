@@ -80,10 +80,9 @@ timer(2){
 </p>
 
 ## Yêu cầu
-- Cài đặt libApiKey.deb (file deb trên repo hoặc ở Releases)
 - Liên hệ với tôi để được kết nối với Server
 - Dự án có phí nhưng trong thời gian thử nghiệm sẽ miễn phí trong thời gian và giới hạn nhất định
-
+- Trong project phải có thư mục layout như template.
 ## Hướng dẫn bằng video
 [Youtube](https://youtu.be/BNMgdwZNJcU)
 
