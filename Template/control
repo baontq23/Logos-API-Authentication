@@ -1,0 +1,9 @@
+Package: com.baontq.test
+Name: Key Mod Menu
+Depends: mobilesubstrate, preferenceloader
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Mod Menu by Bao Nguyen!
+Maintainer: Bao
+Author: baontq
+Section: Tweaks
