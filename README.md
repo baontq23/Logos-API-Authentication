@@ -78,6 +78,9 @@ timer(2){
 	<br>
 </p>
 
+## Video Guide
+[Youtube](https://youtu.be/BNMgdwZNJcU)
+
 ## Requirement
 - Install libApiKey.deb
 - Contact me register with server
