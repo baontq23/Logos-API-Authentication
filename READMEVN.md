@@ -84,7 +84,7 @@ timer(2){
 - Dự án có phí nhưng trong thời gian thử nghiệm sẽ miễn phí trong thời gian và giới hạn nhất định
 
 ## Hướng dẫn bằng video
-
+[Youtube](https://youtu.be/BNMgdwZNJcU)
 
 ## Credits
 * [dogo](https://github.com/dogo)
