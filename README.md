@@ -83,7 +83,7 @@ timer(2){
 [Youtube](https://youtu.be/BNMgdwZNJcU)
 
 ## Requirement
-- Contact me register with server
+- Register account on [Dashboard](admin.baontq.xyz)
 - layout folder (like template)
 ## Credits
 * [dogo](https://github.com/dogo)
