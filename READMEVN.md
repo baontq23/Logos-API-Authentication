@@ -80,7 +80,7 @@ timer(2){
 </p>
 
 ## Yêu cầu
-- Liên hệ với tôi để được kết nối với Server
+- Đăng ký tài khoản [tại đây](https://admin.baontq.xyz)
 - Dự án có phí nhưng trong thời gian thử nghiệm sẽ miễn phí trong thời gian và giới hạn nhất định
 - Trong project phải có thư mục layout như template.
 ## Hướng dẫn bằng video
