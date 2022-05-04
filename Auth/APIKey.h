@@ -7,6 +7,7 @@
 + (void)setEmail:(NSString*)email_;
 + (void)setDebid:(NSInteger)debid_;
 + (void)setDebVersion:(NSString*)version_;
++ (void)setDylibName:(NSString*)dylibname_;//xem trong MAKEFILE xem đặt tên như nào
 + (NSString *)getUserName;
 + (NSString *)getDeviceMessage;
 + (NSString *)getUUID;
