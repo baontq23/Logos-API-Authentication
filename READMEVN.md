@@ -80,7 +80,7 @@ timer(2){
 </p>
 
 ## Yêu cầu
-- Đăng ký tài khoản [tại đây](https://admin.baontq.xyz)
+- Đăng ký tài khoản [tại đây](https://admin.baontq.xyz/admin/index.php)
 - Dự án có phí nhưng trong thời gian thử nghiệm sẽ miễn phí trong thời gian và giới hạn nhất định
 - Trong project phải có thư mục layout như template.
 ## Hướng dẫn bằng video
