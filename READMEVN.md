@@ -1,6 +1,6 @@
 # Logos-API-Authentication
-[![APIKey](https://img.shields.io/badge/APIAuth-1.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
-[![Vietnamese Guide](https://img.shields.io/badge/VietnameseGuide-1.0-green)](https://github.com/baontq23/Logos-API-Authentication/)
+[![APIKey](https://img.shields.io/badge/APIAuth-3.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
+[![Vietnamese Guide](https://img.shields.io/badge/VietnameseGuide-2.0-green)](https://github.com/baontq23/Logos-API-Authentication/)
 > Lib đơn giản thêm trình xác thực cho tweak của bạn
 >> Có thể sử dụng trong các project Theos, dragon maker, etc..
 -----
