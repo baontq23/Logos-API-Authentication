@@ -14,22 +14,24 @@
 # Cách sử dụng
 ## Bước 1. Đăng ký tài khoản trên hệ thống APIServer
 [Vào bảng điều khiển](https://baontq.com/admin/index.php)
-- 
+- Tiến hành tạo một gói mới trên hệ thống để nhận thông tin
+- Hãy điền phiên bản và các trường yêu cầu. Một số dữ liệu có thể nhập ngẫu nhiên do chưa có. (ví dụ như mã sha1, link download, ...) 
+- Sau khi tạo xong, ta nhập các thông tin vào APIConect.xm
 <p align="center">
 	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/4.png"/>
 	<br>
 	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/5.png"/>
 </p>
 
-## Step 2. Config APIConect.xm
+## Bước 2. Cấu hình APIConect.xm
 ```obj-c
 #import "Auth/APIKey.h"
 
 static void didFinishLaunching(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef info) {
-[APIClient setEmail:@"email@examble.com"];//your email on server
-[APIClient setDebid:0];//your package id
-[APIClient setDebVersion:@"lqmfa1.0"];//package version
-[APIClient setDylibName:@"keytest"];// dylib name on MAKEFILE
+[APIClient setEmail:@"email@examble.com"];//email của bạn đăng ký trên hệ thống
+[APIClient setDebid:0];//mã id của gói
+[APIClient setDebVersion:@"lqmfa1.0"];//phiên bản của gói
+[APIClient setDylibName:@"keytest"];// tên của dylib, xem trong MAKEFILE phần TWEAKNAME.
 
 }
 
@@ -38,7 +40,7 @@ static void didFinishLaunching(CFNotificationCenterRef center, void *observer, C
 }
 
 ```
-## Step 3. Set up functions (Example with FAHMenu)
+## Bước 3. Sử dụng với các hàm yêu cầu phải mua mới có thể sử dụng (Ví dụ với FAHMenu)
 ```obj-c
 #import "baseicon.h"
 #import "FAHMenu/Macros.h"
@@ -73,14 +75,14 @@ timer(2){
 }
 ```
 
-## Result 
+## Kết quả 
 <p align="center">
 	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/3.jpg"/>
 	<br>
 </p>
 
 ## Yêu cầu
-- Đăng ký tài khoản [tại đây](https://admin.baontq.xyz/admin/index.php)
+- Đăng ký tài khoản [tại đây](https://baontq.com/admin/index.php)
 - Dự án có phí nhưng trong thời gian thử nghiệm sẽ miễn phí trong thời gian và giới hạn nhất định
 - Trong project phải có thư mục layout như template.
 ## Hướng dẫn bằng video
