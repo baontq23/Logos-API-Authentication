@@ -11,32 +11,34 @@
 	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/2.png"/>
 </p>
 
-## Cách sử dụng trong objective-c
+# Cách sử dụng
+## Bước 1. Đăng ký tài khoản trên hệ thống APIServer
+[Vào bảng điều khiển](https://baontq.com/admin/index.php)
+- 
+<p align="center">
+	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/4.png"/>
+	<br>
+	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/5.png"/>
+</p>
+
+## Step 2. Config APIConect.xm
 ```obj-c
 #import "Auth/APIKey.h"
-//Phải khởi tạo đầu tiên để có dữ liệu gửi lên server
-[APIClient setDylibName:@"TWEAKNAME"];//Tên tweak trong makefile, đặt sai sẽ không tìm được trên server
-[APIClient setEmail:@"example@domain.com"]; //email register on website
-[APIClient setDebid:0]; //id deb !important
-[APIClient setDebVersion:@"lqmvn1.3"];// deb version (NSString)
 
-void function(){
-   //chức năng trả phí
-   [APIClient paid:^{
-       loadmenu(); //khoá hàm khởi tạo menu để yêu cầu xác thực 
-       loadview(); //etc
-       menuSetup();
-   }];
+static void didFinishLaunching(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef info) {
+[APIClient setEmail:@"email@examble.com"];//your email on server
+[APIClient setDebid:0];//your package id
+[APIClient setDebVersion:@"lqmfa1.0"];//package version
+[APIClient setDylibName:@"keytest"];// dylib name on MAKEFILE
+
 }
-void vipFuntion() {
-  [APIClient vipPaid:^ { //khoá những chức năng yêu cầu bản vip hoặc admin
-      //memory patcher 
-      //admin funtion
-  }];
+
+%ctor {
+  CFNotificationCenterAddObserver(CFNotificationCenterGetLocalCenter(), NULL, &didFinishLaunching, (CFStringRef)UIApplicationDidFinishLaunchingNotification, NULL, CFNotificationSuspensionBehaviorDeliverImmediately);
 }
 
 ```
-## Ví dụ cách dùng với FAHMenu
+## Step 3. Set up functions (Example with FAHMenu)
 ```obj-c
 #import "baseicon.h"
 #import "FAHMenu/Macros.h"
@@ -51,9 +53,6 @@ void setup(){
 
 
 static void didFinishLaunching(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef info) {
-[APIClient setEmail:@"example@domain.com"]; //email web server
-[APIClient setDebid:0]; //id deb phải trùng trên web để phân biệt admin
-[APIClient setDebVersion:@"lqmvn1.3"];// phiên bản của deb, nếu không trùng với server sẽ báo cho user cập nhật
 [UIPatch setFrameworkName:"UnityFramework"];
 
 timer(2){ 	
@@ -73,6 +72,7 @@ timer(2){
   CFNotificationCenterAddObserver(CFNotificationCenterGetLocalCenter(), NULL, &didFinishLaunching, (CFStringRef)UIApplicationDidFinishLaunchingNotification, NULL, CFNotificationSuspensionBehaviorDeliverImmediately);
 }
 ```
+
 ## Result 
 <p align="center">
 	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/3.jpg"/>
