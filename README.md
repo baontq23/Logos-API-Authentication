@@ -11,7 +11,7 @@
 	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/2.png"/>
 </p>
 
-## Example Useage objective-c
+# Example Useage objective-c
 ```obj-c
 #import "Auth/APIKey.h"
 void function(){
@@ -30,7 +30,16 @@ void vipFuntion() {
 }
 
 ```
-## Config API
+# How to use
+## Step 1. Register or login APIServer
+[Dashboard](https://baontq.com/admin/index.php)
+<p align="center">
+	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/4.png"/>
+	<br>
+	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/5.png"/>
+</p>
+
+## Step 2. Config APIConect.xm
 ```obj-c
 #import "Auth/APIKey.h"
 
@@ -47,7 +56,7 @@ static void didFinishLaunching(CFNotificationCenterRef center, void *observer, C
 }
 
 ```
-## Example with FAHMenu
+## Step 3. Set up functions (Example with FAHMenu)
 ```obj-c
 #import "baseicon.h"
 #import "FAHMenu/Macros.h"
