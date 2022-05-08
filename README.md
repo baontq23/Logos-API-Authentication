@@ -14,12 +14,6 @@
 ## Example Useage objective-c
 ```obj-c
 #import "Auth/APIKey.h"
-//initialize first
-[APIClient setDylibName:@"TWEAKNAME"];//name in makefile
-[APIClient setEmail:@"example@domain.com"]; //email register on website
-[APIClient setDebid:0]; //id deb !important
-[APIClient setDebVersion:@"lqmvn1.3"];// deb version (NSString)
-
 void function(){
    //paid 
    [APIClient paid:^{
@@ -33,6 +27,23 @@ void vipFuntion() {
       //memory patcher 
       //admin funtion
   }];
+}
+
+```
+## Config API
+```obj-c
+#import "Auth/APIKey.h"
+
+static void didFinishLaunching(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef info) {
+[APIClient setEmail:@"email@examble.com"];//your email on server
+[APIClient setDebid:0];//your package id
+[APIClient setDebVersion:@"lqmfa1.0"];//package version
+[APIClient setDylibName:@"keytest"];// dylib name on MAKEFILE
+
+}
+
+%ctor {
+  CFNotificationCenterAddObserver(CFNotificationCenterGetLocalCenter(), NULL, &didFinishLaunching, (CFStringRef)UIApplicationDidFinishLaunchingNotification, NULL, CFNotificationSuspensionBehaviorDeliverImmediately);
 }
 
 ```
@@ -51,9 +62,6 @@ void setup(){
 
 
 static void didFinishLaunching(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef info) {
-[APIClient setEmail:@"example@domain.com"]; //email web server
-[APIClient setDebid:0]; //id deb
-[APIClient setDebVersion:@"lqmvn1.3"];// deb version
 [UIPatch setFrameworkName:"UnityFramework"];
 
 timer(2){ 	
@@ -83,7 +91,7 @@ timer(2){
 [Youtube](https://youtu.be/BNMgdwZNJcU)
 
 ## Requirement
-- Register account on [Dashboard](https://admin.baontq.xyz/admin/index.php)
+- Register account on [Dashboard](https://baontq.com/admin/index.php)
 - layout folder (like template)
 ## Credits
 * [dogo](https://github.com/dogo)
