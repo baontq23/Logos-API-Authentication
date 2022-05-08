@@ -7,14 +7,14 @@
 + (void)setEmail:(NSString*)email_;
 + (void)setDebid:(NSInteger)debid_;
 + (void)setDebVersion:(NSString*)version_;
-+ (void)setDylibName:(NSString*)dylibname_;
++ (void)setDylibName:(NSString*)dylibname_;//xem trong MAKEFILE xem đặt tên như nào
 + (NSString *)getUserName;
 + (NSString *)getDeviceMessage;
 + (NSString *)getUUID;
 + (NSString *)getKey;
 + (NSString *)getDeviceModel;
 + (const char *)getKeyType;
-+ (int)getDay;
++ (NSString*)getDay;
 + (int) getidKey;
 + (instancetype)View;
 + (void)reloadInfo;

@@ -14,7 +14,7 @@
 + (NSString *)getKey;
 + (NSString *)getDeviceModel;
 + (const char *)getKeyType;
-+ (int)getDay;
++ (NSString*)getDay;
 + (int) getidKey;
 + (instancetype)View;
 + (void)reloadInfo;

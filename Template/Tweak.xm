@@ -13,10 +13,6 @@ void setup(){
 
 }
 static void didFinishLaunching(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef info) {
-[APIClient setEmail:@"example@gmail.com"];
-[APIClient setDebid:0];
-[APIClient setDebVersion:@"lqm2.0"];
-[APIClient setDylibName:@"keytest"];
 [UIPatch setFrameworkName:"UnityFramework"];
 
 timer(2){ 	

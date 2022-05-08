@@ -14,6 +14,6 @@ keytest_CCFLAGS = -std=c++11 -fno-rtti -fno-exceptions -DNDEBUG
 keytest_LDFLAGS += FAHMenu/libFAHMenu.dylib FAHMenu/libAPIKey.dylib FAHMenu/JRMemory.framework/JRMemory
 keytest_LIBRARIES += substrate
 keytest_FRAMEWORKS = UIKit Foundation Security QuartzCore CoreGraphics CoreText
-keytest_FILES = Tweak.xm
+keytest_FILES = Tweak.xm APIConect.xm
 
 include $(THEOS_MAKE_PATH)/tweak.mk
