@@ -56,7 +56,7 @@ static void didFinishLaunching(CFNotificationCenterRef center, void *observer, C
 }
 
 ```
-## Step 3. Set up functions (Example with FAHMenu)
+## Step 3. Setup functions (Example with FAHMenu)
 ```obj-c
 #import "baseicon.h"
 #import "FAHMenu/Macros.h"
