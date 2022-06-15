@@ -100,7 +100,7 @@ timer(2){
 [Youtube](https://youtu.be/BNMgdwZNJcU)
 
 ## Requirement
-- Register account on [Dashboard](https://baontq.com/admin/index.php)
+- Register account on [Dashboard](https://baontq.xyz/admin/index.php)
 - layout folder (like template)
 ## Credits
 * [dogo](https://github.com/dogo)
