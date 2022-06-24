@@ -1,15 +1,22 @@
 # Logos-API-Authentication
-[![APIKey](https://img.shields.io/badge/APIAuth-3.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
-[![Vietnamese Guide](https://img.shields.io/badge/VietnameseGuide-2.0-green)](https://github.com/baontq23/Logos-API-Authentication/)
+[![APIKey](https://img.shields.io/badge/APIAuth-4.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
+[![Vietnamese Guide](https://img.shields.io/badge/VietnameseGuide-4.0-green)](https://github.com/baontq23/Logos-API-Authentication/)
 > Lib đơn giản thêm trình xác thực cho tweak của bạn
 >> Có thể sử dụng trong các project Theos, dragon maker, etc..
 -----
-## Hình ảnh với FAHMenu
-<p align="center">
-	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/1.png"/>
-	<br>
-	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/2.png"/>
-</p>
+
+## Demo
+Authentication field - Light             |  Authentication field - Dark  
+:-------------------------:|:-------------------------:
+![](https://raw.githubusercontent.com/baontq23/Logos-API-Authentication/main/img/enter-key-popup-light.PNG)  |  ![](https://raw.githubusercontent.com/baontq23/Logos-API-Authentication/main/img/enter-key-popup-dark.PNG)
+
+Update Popup - Light             |  Update Popup - Dark  
+:-------------------------:|:-------------------------:
+![](https://raw.githubusercontent.com/baontq23/Logos-API-Authentication/main/img/update-noti-light.PNG)  |  ![](https://raw.githubusercontent.com/baontq23/Logos-API-Authentication/main/img/update-noti-dark.PNG)
+
+Starter
+:-------------------------:
+![](https://raw.githubusercontent.com/baontq23/Logos-API-Authentication/main/img/starter.PNG)
 
 # Cách sử dụng
 ## Bước 1. Đăng ký tài khoản trên hệ thống APIServer
@@ -75,23 +82,8 @@ timer(2){
 }
 ```
 
-## Kết quả 
-<p align="center">
-	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/3.jpg"/>
-	<br>
-</p>
-
 ## Yêu cầu
 - Đăng ký tài khoản [tại đây](https://baontq.com/admin/index.php)
-- Dự án có phí nhưng trong thời gian thử nghiệm sẽ miễn phí trong thời gian và giới hạn nhất định
-- Trong project phải có thư mục layout như template.
 ## Hướng dẫn bằng video
 [Youtube](https://youtu.be/BNMgdwZNJcU)
 
-## Credits
-* [dogo](https://github.com/dogo)
-  * For [SCLAlertView](https://github.com/dogo/SCLAlertView)
-* [jdg](https://github.com/jdg)
-  * For [MBProgressHUD](https://github.com/jdg/MBProgressHUD)
-* [fahlnbg](https://github.com/fahlnbg)
-  * For [FAHMenu-iOS-Mod-Menu](https://github.com/fahlnbg/FAHMenu-iOS-Mod-Menu)
