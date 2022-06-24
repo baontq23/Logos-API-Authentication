@@ -1,10 +1,13 @@
-#import "FAHMenu/APIKey.h"
+#import "APIKey.h"
 
 static void didFinishLaunching(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef info) {
-[APIClient setEmail:@"email@domain.com"];
-[APIClient setDebid:0];
-[APIClient setDebVersion:@"lqmfa1.0"];
-[APIClient setDylibName:@"keytest"];//Xem trong MAKEFILE Tweakname
+[APIClient setEmail:@"admin@gmail.com"];
+[APIClient setDebid:0];//package id
+[APIClient setDebVersion:@"//Package Version"];
+[APIClient setDylibName:@"Dylib file name"];
+
+//Custom
+[APIClient setLogoutAllowed:TRUE];
 
 }
 
