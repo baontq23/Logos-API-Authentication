@@ -42,6 +42,9 @@ Start by adding the following to your project
 #import "APIKey.h"
 ```
 
+### Install library (Important)
+[Releases](https://github.com/baontq23/Logos-API-Authentication/releases)
+
 ### API Integration
 
 ```Objective-C
@@ -105,7 +108,7 @@ Add to APIConfig.xm
 See more in APIKey.h
 
 ## Video Guide
-[Youtube](https://youtu.be/BNMgdwZNJcU)
+[Youtube](https://youtu.be/2n7VPriBJI0)
 
 ### Author
 
