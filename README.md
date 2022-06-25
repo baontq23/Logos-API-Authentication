@@ -39,7 +39,7 @@ Clone or Download this Repo. Then simply drag the folder ```API``` to your proje
 Start by adding the following to your project
 
 ```Objective-C
-#import "FCAlertView.h"
+#import "APIKey.h"
 ```
 
 ### API Integration
