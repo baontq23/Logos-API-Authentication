@@ -59,6 +59,14 @@
 
  @return Key type
  */
+
+/**
+ Lấy địa chỉ IP V4 của thiết bị
+
+ @return IP Address
+ */
++ (NSString *)getIPAddress;
+
 + (const char *)getKeyType;
 
 /**
