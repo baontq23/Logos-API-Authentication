@@ -1,3 +1,5 @@
+NOTE: API v4 is deprecated. You should upgrade to API v5
+
 Logos API Authentication
 ============
 
