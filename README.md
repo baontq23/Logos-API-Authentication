@@ -3,105 +3,70 @@ Logos API Authentication
 
 Logos API Authentication is a validator for tweaks.
 
-[![APIKey](https://img.shields.io/badge/APIAuth-4.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
+[![APIKey](https://img.shields.io/badge/APIAuth-5.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
 [![Vietnamese Guide](https://img.shields.io/badge/VietnameseGuide-1.0-green)](https://github.com/baontq23/Logos-API-Authentication/blob/main/READMEVN.md)
 
-## Demo
-Authentication field - Light             |  Authentication field - Dark  
+## Preview
+Login             |  Login success  
 :-------------------------:|:-------------------------:
-![](https://raw.githubusercontent.com/baontq23/Logos-API-Authentication/main/img/enter-key-popup-light.PNG)  |  ![](https://raw.githubusercontent.com/baontq23/Logos-API-Authentication/main/img/enter-key-popup-dark.PNG)
+![](https://raw.githubusercontent.com/baontq23/Logos-API-Authentication/main/img/enter.png)  |  ![](https://raw.githubusercontent.com/baontq23/Logos-API-Authentication/main/img/login-success.png)
 
-Update Popup - Light             |  Update Popup - Dark  
+Update             |  Expired  
 :-------------------------:|:-------------------------:
-![](https://raw.githubusercontent.com/baontq23/Logos-API-Authentication/main/img/update-noti-light.PNG)  |  ![](https://raw.githubusercontent.com/baontq23/Logos-API-Authentication/main/img/update-noti-dark.PNG)
+![](https://raw.githubusercontent.com/baontq23/Logos-API-Authentication/main/img/update.png)  |  ![](https://raw.githubusercontent.com/baontq23/Logos-API-Authentication/main/img/expired.png)
 
-Starter
+Dashboard
 :-------------------------:
-![](https://raw.githubusercontent.com/baontq23/Logos-API-Authentication/main/img/starter.PNG)
+![](https://raw.githubusercontent.com/baontq23/Logos-API-Authentication/main/img/dashboard.png)
 
 ## Installation
 
 ### Client
 
-Clone or Download this Repo. Then simply drag the folder ```API``` to your project.
+Clone or Download this Repo. Then simply drag the folder ```API-EN``` or ```API-VI``` to your project and rename folder to ```API```.
 
 ### Server
 
-[Dashboard](https://baontq.com/admin/index.php)
-<p align="center">
-	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/4.png"/>
-	<br>
-	<img src="https://github.com/baontq23/Logos-API-Authentication/blob/main/img/5.png"/>
-</p>
+Register account and create package on [APIServer](https://v3.baontq.xyz)
 
-## Adding API
+## Setup API
 
 Start by adding the following to your project
 
 ```Objective-C
-#import "APIKey.h"
+#import "API/APIKey.h"
 ```
+### Makefile config (theos)
+```make
+#Edit TWEAK_NAME and remove @@
+@@TWEAK_NAME@@_LDFLAGS += API/libAPIClient.a 
 
-### Install library (Important)
-[Releases](https://github.com/baontq23/Logos-API-Authentication/releases)
+```
 
 ### API Integration
 
 ```Objective-C
 #import "API/APIKey.h"
+[NSObject setGetRealUDID:YES]; //Get real UDID if you want
+[NSObject setToken:@"TOKEN"]; //Enter token from dashboard
+
 void function(){
    //paid 
-   [APIClient paid:^{
-       //load menu
-       loadview(); //etc
-       menuSetup();
+   [NSObject paid:^{
+        //load menu
+        loadview(); //etc
+        menuSetup();
+	
+	//Optional
+    	NSLog(@"APIData - Key: %@", [NSObject getKey]); 
+	NSLog(@"APIData - UDID: %@", [NSObject getUDID]);
+	NSLog(@"APIData - Expiry date: %@", [NSObject getExpiryDate]);
+ 	NSLog(@"APIData - Device model: %@", [NSObject getDeviceModel]);
+
    }];
 }
-void vipFuntion() {
-  [APIClient vipPaid:^ {
-      //memory patcher 
-      //admin funtion
-  }];
-}
 
-```
-
-#### API Config
-
-```Objective-C
-//APIConfig.xm
-#import "APIKey.h"
-
-static void didFinishLaunching(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef info) {
-[APIClient setEmail:@"email@domain.com"];
-[APIClient setDebid:0];
-[APIClient setDebVersion:@"debversion"];
-[APIClient setDylibName:@"dylibfilename"];
-
-//You can add some functions, see more in APIKey.h
-[APIClient setLogoutAllowed:TRUE];
-
-}
-
-%ctor {
-  CFNotificationCenterAddObserver(CFNotificationCenterGetLocalCenter(), NULL, &didFinishLaunching, (CFStringRef)UIApplicationDidFinishLaunchingNotification, NULL, CFNotificationSuspensionBehaviorDeliverImmediately);
-}
-
-```            
-
-### Allow users to log out key
-
-Add to APIConfig.xm
-
-```Objective-C
-[APIClient setLogoutAllowed:TRUE];
-```
-
-### Message on successful login
-
-```Objective-C
-[APIClient setAlertAfterLogin:@"//message"];
-```
+```          
 
 ## Extra Customizations 
 
@@ -113,7 +78,3 @@ See more in APIKey.h
 ### Author
 
 Created by [Bao Nguyen](https://baontq.dev).
-
-Credit for the Beautiful AlertView [FCAlertView](https://github.com/nimati/FCAlertView).
-
-Credit for the Beautiful AlertView [SCLAlertView](https://github.com/dogo/SCLAlertView).
