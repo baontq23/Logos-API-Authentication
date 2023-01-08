@@ -1,0 +1,19 @@
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <Metal/Metal.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface NSObject (checkStatus)<UIAlertViewDelegate>
+- (void) paid:(void (^)(void))execute;
+- (void) setToken:(NSString*)token;
+- (void) setGetRealUDID:(bool)isRealUDID;
+- (NSString*) getKey;
+- (NSString*) getExpiryDate;
+- (NSString*) getUDID;
+- (NSString*) getDeviceModel;
+
+@end
+
+NS_ASSUME_NONNULL_END
+
