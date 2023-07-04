@@ -2,7 +2,7 @@
 
 Logos API Authentication là một trình xác thực cho tinh chỉnh iOS.
 
-[![APIKey](https://img.shields.io/badge/APIAuth-5.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
+[![APIKey](https://img.shields.io/badge/APIAuth-5.1.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
 [![Vietnamese Guide](https://img.shields.io/badge/VietnameseGuide-2.0-green)](https://github.com/baontq23/Logos-API-Authentication/blob/main/READMEVN.md)
 
 ## Preview
@@ -49,21 +49,22 @@ Bắt đầu bằng cách thêm phần này vào project của bạn
 
 ```Objective-C
 #import "API/APIKey.h"
-[NSObject setGetRealUDID:YES]; //Lấy UDID gốc của thiết bị nếu bạn muốn
-[NSObject setToken:@"TOKEN"]; //Điền token lấy từ dashboard
 
 void function(){
-   //paid
-   [NSObject paid:^{
+    APIClient *API = [[APIClient alloc] init];
+    [API setGetRealUDID:YES]; //Lấy UDID thật của thiết bị (cần xác minh)
+    [API setToken:@"TOKEN"]; //Điền token lấy từ dashboard
+   //bọc hàm cần được bảo vệ
+    [API paid:^{
         //load menu
         loadview(); //etc
         menuSetup();
 
-	//Tuỳ chọn, có thể ko cần
-    	NSLog(@"APIData - Key: %@", [NSObject getKey]);
-	NSLog(@"APIData - UDID: %@", [NSObject getUDID]);
-	NSLog(@"APIData - Hết hạn vào: %@", [NSObject getExpiryDate]);
- 	NSLog(@"APIData - Thiết bị: %@", [NSObject getDeviceModel]);
+        //Các thông tin có thể tích hợp nên menu của bạn nếu cần
+        NSLog(@"APIData - Key: %@", [API getKey]); //Trả về key hiện tại
+        NSLog(@"APIData - UDID: %@", [API getUDID]); //Trả về UDID của máy
+        NSLog(@"APIData - Expiry date: %@", [API getExpiryDate]); //Trả về ngày hết hạn
+        NSLog(@"APIData - Device model: %@", [API getDeviceModel]); //Trả về kiểu thiết bị
 
    }];
 }

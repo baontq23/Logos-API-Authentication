@@ -2,7 +2,7 @@
 
 Logos API Authentication is a validator for tweaks.
 
-[![APIKey](https://img.shields.io/badge/APIAuth-5.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
+[![APIKey](https://img.shields.io/badge/APIAuth-5.1.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
 [![Vietnamese Guide](https://img.shields.io/badge/VietnameseGuide-1.0-green)](https://github.com/baontq23/Logos-API-Authentication/blob/main/READMEVN.md)
 
 ## Preview
@@ -49,21 +49,22 @@ Start by adding the following to your project
 
 ```Objective-C
 #import "API/APIKey.h"
-[NSObject setGetRealUDID:YES]; //Get real UDID if you want
-[NSObject setToken:@"TOKEN"]; //Enter token from dashboard
 
 void function(){
+    APIClient *API = [[APIClient alloc] init];
+    [API setGetRealUDID:YES]; //Get real UDID if you want
+    [API setToken:@"TOKEN"]; //Enter token from dashboard
    //paid
-   [NSObject paid:^{
+    [API paid:^{
         //load menu
         loadview(); //etc
         menuSetup();
 
-	//Optional
-    	NSLog(@"APIData - Key: %@", [NSObject getKey]);
-	NSLog(@"APIData - UDID: %@", [NSObject getUDID]);
-	NSLog(@"APIData - Expiry date: %@", [NSObject getExpiryDate]);
- 	NSLog(@"APIData - Device model: %@", [NSObject getDeviceModel]);
+        //Optional
+    	NSLog(@"APIData - Key: %@", [API getKey]);
+        NSLog(@"APIData - UDID: %@", [API getUDID]);
+        NSLog(@"APIData - Expiry date: %@", [API getExpiryDate]);
+        NSLog(@"APIData - Device model: %@", [API getDeviceModel]);
 
    }];
 }

@@ -4,7 +4,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (checkStatus)<UIAlertViewDelegate>
+@interface APIClient : NSObject
 - (void) paid:(void (^)(void))execute;
 - (void) setToken:(NSString*)token;
 - (void) setGetRealUDID:(bool)isRealUDID;
