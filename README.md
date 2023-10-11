@@ -53,6 +53,7 @@ Start by adding the following to your project
 void function(){
     APIClient *API = [[APIClient alloc] init];
     [API setGetRealUDID:YES]; //Get real UDID if you want
+    [API setLanguage:@"vi"]; //vi or en
     [API setToken:@"TOKEN"]; //Enter token from dashboard
    //paid
     [API paid:^{
