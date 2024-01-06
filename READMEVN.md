@@ -2,7 +2,7 @@
 
 Logos API Authentication là một trình xác thực cho tinh chỉnh iOS.
 
-[![APIKey](https://img.shields.io/badge/APIAuth-5.2.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
+[![APIKey](https://img.shields.io/badge/APIAuth-5.3.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
 [![Vietnamese Guide](https://img.shields.io/badge/VietnameseGuide-2.0-green)](https://github.com/baontq23/Logos-API-Authentication/blob/main/READMEVN.md)
 
 ## Preview
@@ -52,7 +52,6 @@ Bắt đầu bằng cách thêm phần này vào project của bạn
 
 void function(){
     APIClient *API = [[APIClient alloc] init];
-    [API setGetRealUDID:YES]; //Lấy UDID thật của thiết bị (cần xác minh)
     [API setToken:@"TOKEN"]; //Điền token lấy từ dashboard
     [API setLanguage:@"vi"]; //vi hoặc en
    //bọc hàm cần được bảo vệ

@@ -14,8 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface APIClient : NSObject
 - (void) paid:(void (^)(void))execute;
 - (void) setToken:(NSString*)token;
-- (void) setGetRealUDID:(bool)isRealUDID;
 - (void) setLanguage:(NSString*)language;
+- (id)getPackageDataWithKey:(NSString*)key;
 - (NSString*) getKey;
 - (NSString*) getExpiryDate;
 - (NSString*) getUDID;

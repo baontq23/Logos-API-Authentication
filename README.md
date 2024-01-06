@@ -2,7 +2,7 @@
 
 Logos API Authentication is a validator for tweaks.
 
-[![APIKey](https://img.shields.io/badge/APIAuth-5.2.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
+[![APIKey](https://img.shields.io/badge/APIAuth-5.3.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
 [![Vietnamese Guide](https://img.shields.io/badge/VietnameseGuide-1.0-green)](https://github.com/baontq23/Logos-API-Authentication/blob/main/READMEVN.md)
 
 ## Preview
@@ -52,8 +52,6 @@ Start by adding the following to your project
 
 void function(){
     APIClient *API = [[APIClient alloc] init];
-    [API setGetRealUDID:YES]; //Get real UDID if you want
-    [API setLanguage:@"vi"]; //vi or en
     [API setToken:@"TOKEN"]; //Enter token from dashboard
    //paid
     [API paid:^{
