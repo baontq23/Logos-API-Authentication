@@ -48,7 +48,7 @@ Start by adding the following to your project
 ### API Integration
 
 ```Objective-C
-#import "API/APIKey.h"
+#import "APIClient.h"
 
 void function(){
     APIClient *API = [[APIClient alloc] init];

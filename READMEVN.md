@@ -48,7 +48,7 @@ Bắt đầu bằng cách thêm phần này vào project của bạn
 ### Tích hợp API
 
 ```Objective-C
-#import "API/APIKey.h"
+#import "APIClient.h"
 
 void function(){
     APIClient *API = [[APIClient alloc] init];
