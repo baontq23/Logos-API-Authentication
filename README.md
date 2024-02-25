@@ -34,7 +34,7 @@ Register account and create package on [APIServer](https://v3.baontq.xyz)
 Start by adding the following to your project
 
 ```Objective-C
-#import "API/APIKey.h"
+#import "API/APIClient.h"
 ```
 
 ### Makefile config (theos)
