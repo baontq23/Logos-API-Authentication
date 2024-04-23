@@ -2,7 +2,7 @@
 
 Logos API Authentication is a validator for tweaks.
 
-[![APIKey](https://img.shields.io/badge/APIAuth-5.4.1-blue)](https://github.com/baontq23/Logos-API-Authentication/)
+[![APIKey](https://img.shields.io/badge/APIAuth-5.4.2-blue)](https://github.com/baontq23/Logos-API-Authentication/)
 [![Vietnamese Guide](https://img.shields.io/badge/VietnameseGuide-1.0-green)](https://github.com/baontq23/Logos-API-Authentication/blob/main/READMEVN.md)
 
 ## Preview
@@ -72,7 +72,7 @@ void function(){
 
 ## Extra Customizations
 
-See more in APIKey.h
+See more in APIClient.h
 
 ## Video Guide
 
