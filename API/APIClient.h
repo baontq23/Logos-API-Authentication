@@ -3,7 +3,7 @@
 //  APIClient
 //
 //  Created by Bao Nguyen on 01/09/2023.
-//  5.4.6
+//  5.4.7 (1)
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) paid:(void (^)(void))execute;
 - (void) setToken:(NSString*)token;
 - (void) setLanguage:(NSString*)language;
+- (void) hideUI:(bool)isHide;
+- (void) strictMode:(bool)_isStrictMode;
+- (void) silentMode:(bool)_isSilentMode;
 - (id)getPackageDataWithKey:(NSString*)key;
 - (NSString*) getKey;
 - (NSString*) getExpiryDate;
