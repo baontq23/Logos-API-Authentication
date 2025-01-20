@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString*) getExpiryDate;
 - (NSString*) getUDID;
 - (NSString*) getDeviceModel;
+- (NSString*) getLoginIP;
+- (NSString*) getPackageName;
 + (instancetype) sharedAPIClient;
 @end
 
