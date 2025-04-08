@@ -3,7 +3,7 @@
 //  APIClient
 //
 //  Created by Bao Nguyen on 01/09/2023.
-//  5.4.7 (1)
+//
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface APIClient : NSObject
 - (void) paid:(void (^)(void))execute;
+- (void)start:(void (^)(void))onStart init:(void (^)(void))init;
 - (void) setToken:(NSString*)token;
 - (void) setLanguage:(NSString*)language;
 - (void) hideUI:(bool)isHide;

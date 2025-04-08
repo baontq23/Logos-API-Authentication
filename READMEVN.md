@@ -2,7 +2,7 @@
 
 Logos API Authentication là một trình xác thực cho tinh chỉnh iOS.
 
-[![APIKey](https://img.shields.io/badge/APIAuth-5.4.7-blue)](https://github.com/baontq23/Logos-API-Authentication/)
+[![APIKey](https://img.shields.io/badge/APIAuth-5.4.8-blue)](https://github.com/baontq23/Logos-API-Authentication/)
 [![Vietnamese Guide](https://img.shields.io/badge/VietnameseGuide-2.0-green)](https://github.com/baontq23/Logos-API-Authentication/blob/main/READMEVN.md)
 
 ## Preview
