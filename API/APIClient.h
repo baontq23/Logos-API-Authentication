@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) paid:(void (^)(void))execute;
 - (void)start:(void (^)(void))onStart init:(void (^)(void))init;
 - (void) setToken:(NSString*)token;
-- (void) setUDID:(NSString*)uid;
 - (void) setLanguage:(NSString*)language;
 - (void) hideUI:(bool)isHide;
 - (void) strictMode:(bool)_isStrictMode;
@@ -26,9 +25,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString*) getDeviceModel;
 - (NSString*) getLoginIP;
 - (NSString*) getPackageName;
-- (void) onCheckPackage:(void (^)(NSDictionary *header))success onFailure:(void (^)(NSDictionary *error))failure;
-- (void) onCheckDevice:(void (^)(NSDictionary *data))success onFailure:(void (^)(NSDictionary *error))failure;
-- (void) onLogin:(NSString *)inputKey onSuccess:(void (^)(NSDictionary *data))success onFailure:(void (^)(NSDictionary *error))failure;
 + (instancetype) sharedAPIClient;
 @end
 
