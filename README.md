@@ -2,7 +2,7 @@
 
 Logos API Authentication is a validator for tweaks.
 
-[![APIKey](https://img.shields.io/badge/APIAuth-5.5.3-blue)](https://github.com/baontq23/Logos-API-Authentication/)
+[![APIKey](https://img.shields.io/badge/APIAuth-6.0.0-blue)](https://github.com/baontq23/Logos-API-Authentication/)
 [![Vietnamese Guide](https://img.shields.io/badge/VietnameseGuide-1.0-green)](https://github.com/baontq23/Logos-API-Authentication/blob/main/READMEVN.md)
 
 ## Preview
@@ -23,11 +23,11 @@ Dashboard
 
 ### Client
 
-Clone or Download this Repo. Then simply drag the folder `API-EN` or `API-VI` to your project and rename folder to `API`.
+Clone or Download this Repo. Then simply drag the folder `API` to your project.
 
 ### Server
 
-Register account and create package on [APIServer](https://v3.baontq.xyz)
+Register account and create package on [APIServer](https://authtool.app)
 
 ## Setup API
 
@@ -51,21 +51,13 @@ Start by adding the following to your project
 #import "APIClient.h"
 
 void function(){
-    APIClient *API = [[APIClient alloc] init];
-    [API setToken:@"TOKEN"]; //Enter token from dashboard
+    apiclient_set_token("TOKEN");
    //paid
-    [API paid:^{
+    apiclient_paid(^{
         //load menu
-        loadview(); //etc
-        menuSetup();
+        //init();
 
-        //Optional
-    	NSLog(@"APIData - Key: %@", [API getKey]);
-        NSLog(@"APIData - UDID: %@", [API getUDID]);
-        NSLog(@"APIData - Expiry date: %@", [API getExpiryDate]);
-        NSLog(@"APIData - Device model: %@", [API getDeviceModel]);
-
-   }];
+    });
 }
 
 ```
@@ -74,10 +66,10 @@ void function(){
 
 See more in APIClient.h
 
-## Video Guide
+## Guide
 
 [Youtube](https://youtu.be/N-WAY4RTKp4)
 
 ### Author
 
-Created by [Bao Nguyen](https://baontq.dev).
+Created by [Bao Nguyen](https://github.com/baontq23).
