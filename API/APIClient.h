@@ -18,6 +18,7 @@ void apiclient_set_description(const char* description);
 void apiclient_hide_ui(bool isHide);
 void apiclient_strict_mode(bool isStrictMode);
 void apiclient_silent_mode(bool isSilentMode);
+void apiclient_show_udid_guide(bool showGuide);
 void apiclient_set_window_mode(int mode);
 
 void apiclient_paid(apiclient_callback callback);
