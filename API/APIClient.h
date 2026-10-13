@@ -23,10 +23,13 @@ void apiclient_set_window_mode(int mode);
 
 void apiclient_paid(apiclient_callback callback);
 
+const char* apiclient_request_udid(void);
 const char* apiclient_get_key(void);
 const char* apiclient_get_udid(void);
 const char* apiclient_get_expired_at(void);
 const char* apiclient_get_expired_at_local(void);
+const char* apiclient_get_activated_at(void);
+const char* apiclient_get_activated_at_local(void);
 const char* apiclient_get_device_model(void);
 const char* apiclient_get_login_ip(void);
 const char* apiclient_get_package_name(void);
